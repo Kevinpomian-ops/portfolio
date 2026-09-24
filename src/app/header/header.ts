@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss',
   templateUrl: './header.html',
 })
-export class Header {}
+export class Header {
+  selectedLanguage = 'EN';
+}

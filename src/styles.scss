@@ -87,6 +87,19 @@
   font-style: normal;
 }
 
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
 html {
   background-color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: Syne;
+}
+
+p {
+  font-family: Overpass;
 }

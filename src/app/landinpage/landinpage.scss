@@ -1,0 +1,81 @@
+.landinpage {
+  min-height: 100vh;
+  color: #fffcf3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landinpage h1 {
+  font-size: 128px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.name-landingpage{
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  color: #00BC8F;
+}
+
+.line-landingpage{
+  color: #fffcf3;
+  font-weight: 400;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.landingpage-end {
+  padding-top: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-landingpage{
+  transform: rotate(270deg);
+}
+
+.email-landingpage p {
+  font-size: 22px;
+}
+
+.scrolldown-landingpage{
+  padding-right: 58px;
+}
+
+.arrow-window {
+  width: 53px;
+  height: 95px;
+  overflow: hidden;
+}
+
+.arrow-window img {
+  display: block;
+  animation: arrow-flow 1.4s linear infinite;
+}
+
+@keyframes arrow-flow {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow-window img {
+    animation: none;
+  }
+}

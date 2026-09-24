@@ -1,0 +1,72 @@
+h2 {
+    color: #FFFCF3;
+    text-align: left;
+    font-size: 78px;
+    font-weight: 800;
+    margin: 0;
+    padding: 50px 100px 0;
+}
+
+p{
+    color: #FFFCF3;
+}
+
+article{
+    display: flex;
+    padding: 50px 100px;
+    gap: 87px;
+}
+
+article > div:first-child {
+    flex: 1;
+}
+
+.house{
+    height: 28px;
+    width: 36px;
+}
+
+.laptop{
+    height: 28px;
+    width: 36px;
+}
+
+.my-location{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+    padding-top: 48px;
+}
+
+.open-for-remote{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.talk-button{
+    background-color: black;
+    padding: 20px 60px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.nav-talk{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-talk p {
+    margin: 0;
+}
+
+.img-me{
+    height: 553px;
+    width: 553px;
+}
+
+.arrow-right{
+    text-align: right;
+    padding-right: 85px;
+}

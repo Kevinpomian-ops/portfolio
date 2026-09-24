@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+#logo{
+    height: 50px;
+    width: 66px;
+}
+
+.launge-button{
+    height: 28px;
+    width: 40px;
+
+    background-color: #000000;
+    color: #fffcf3;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.launge-button.selected-language {
+    border-color: #00BC8F;
+}
+
+#menuButton{
+    background-color: #000000;
+    border: none;
+    
+}
+
+#menuButtenImg{
+    height: 15px;
+    width: 17px;
+}

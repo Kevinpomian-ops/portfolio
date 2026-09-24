@@ -1,14 +1,25 @@
 <header>
     <div>
-        <img src="assets/logo.png" alt="Logo Kevin Pomian">
+        <img id="logo" src="assets/logo_kp.png" alt="Logo Kevin Pomian">
     </div>
 
     <div>
-        <button>EN</button>
-        <button>DE</button>
+        <button
+            class="launge-button"
+            [class.selected-language]="selectedLanguage === 'EN'"
+            type="button"
+            (click)="selectedLanguage = 'EN'"
+        >
+            EN
+        </button>
+        <button
+            class="launge-button"
+            [class.selected-language]="selectedLanguage === 'DE'"
+            type="button"
+            (click)="selectedLanguage = 'DE'"
+        >
+            DE
+        </button>
+        <button id="menuButton" type="button"><img id="menuButtenImg" src="assets/burger-menu-S3-FFFCF3.svg" alt=""></button>
     </div>
-
-    <nav>
-        <button><img src="" alt=""></button>
-    </nav>
 </header>
