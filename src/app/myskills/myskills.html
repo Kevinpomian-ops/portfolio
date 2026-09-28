@@ -1,1 +1,24 @@
-<p>myskills works!</p>
+<section>
+    <h2>My skills</h2>
+    <div class="skill-sektion">
+        <div class="skill-list">
+        @for (item of skill_list; track item.skill) {
+        <div class="skills">
+            <img [src]="item.img_path" [alt]="item.skill">
+            <p>{{ item.skill }}</p>
+        </div>
+        }
+        </div>
+        <div class="lack-of-skill">
+            <div class="lack-of-skill-icon">
+                <img src="/assets/skills/Property 1=Continued learning.svg" alt="">
+            </div>
+            <p>Don’t see the skill you need?<button>Contact me</button>I’m always ready to learn!</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="arrow-left">
+    <img src="/assets/pfeil.svg" alt="">
+</div>

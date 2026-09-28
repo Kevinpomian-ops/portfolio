@@ -1,0 +1,158 @@
+h2 {
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0 -41px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+    background: #000000;
+}
+
+h2:hover {
+    color: #00BC8F;
+    cursor: default;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-sektion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 633px;
+    width: 1240px;
+    border: 4px solid #FFFCF3;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px 128px;
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    perspective: 600px;
+
+}
+
+.skills>img {
+    height: 75px;
+    width: 75px;
+}
+
+.skills>img:hover {
+    animation: orbit 1s ease-in-out 1;
+}
+
+.lack-of-skill-icon {
+    width: 75px;
+    height: 75px;
+    flex: 0 0 75px;
+    overflow: hidden;
+}
+
+.lack-of-skill-icon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.lack-of-skill-icon > img:hover {
+    animation: orbit 1s ease-in-out 1;
+}
+
+@keyframes orbit {
+    from {
+        transform: translateZ(-60px) rotateY(0deg) translateZ(60px) rotateY(0deg);
+    }
+
+    to {
+        transform: translateZ(-60px) rotateY(360deg) translateZ(60px) rotateY(-360deg);
+    }
+}
+
+.skills:hover>p {
+    color: #00BC8F;
+}
+
+.lack-of-skill {
+    width: 100%;
+    text-align: center;
+}
+
+.arrow-left {
+    align-self: stretch;
+    text-align: left;
+    padding-left: 180px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.arrow-left img {
+    transform: scaleX(-1);
+}
+
+.lack-of-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+}
+
+.lack-of-skill button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 130px;
+    padding: 0;
+    margin-inline: 8px;
+    color: #00BC8F;
+    background-color: #000000;
+    border: none;
+    font-size: 22px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.lack-of-skill button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
+}
+
+.lack-of-skill button:hover,
+.lack-of-skill button:focus-visible {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lack-of-skill button:hover::after,
+.lack-of-skill button:focus-visible::after {
+    transform: scaleX(1);
+}
+
+.lack-of-skill p {
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 16px;
+}
