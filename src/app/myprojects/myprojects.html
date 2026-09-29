@@ -1,0 +1,23 @@
+<section>
+    <div class="portfolio-header">
+        <h2>Portfolio</h2>
+        <p>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</p>
+    </div>
+
+    @for (p of projects; track p.title; let i = $index) {
+    <article class="project" [class.reverse]="i % 2 === 1">
+        <span class="number">0{{ i + 1 }}/0{{ projects.length }}</span>
+        <div class="preview">
+            <img [src]="p.img" [alt]="p.title">
+            <span class="frame"></span>
+            <span class="arrow">↗</span>
+        </div>
+        <div class="info">
+            <h3>{{ p.title }}</h3>
+            <p class="tech">{{ p.tech }}</p>
+            <p class="text">{{ p.text }}</p>
+            <a class="github" [href]="p.link" target="_blank">Github</a>
+        </div>
+    </article>
+    }
+</section>

@@ -1,0 +1,192 @@
+:host {
+    display: block;
+    overflow-x: clip;
+}
+
+h2 {
+    color: #FFFCF3;
+    text-align: left;
+    font-size: 78px;
+    font-weight: 800;
+    margin: 0;
+    padding: 50px 100px 0;
+}
+
+h2:hover {
+    color: #00BC8F;
+    cursor: default;
+}
+
+p {
+    color: #FFFCF3;
+    font-size: 22px;
+    text-align: center;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 60px 100px;
+    box-sizing: border-box;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .number {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        font-size: 40px;
+        font-weight: 800;
+        color: #FFFCF3;
+    }
+
+    .preview {
+        position: relative;
+        flex: 0 0 620px;
+        width: 620px;
+        height: 393px;
+
+        img {
+            display: block;
+            width: 620px;
+            height: 393px;
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: filter 0.4s ease;
+        }
+
+        .frame {
+            position: absolute;
+            inset: 0;
+            border: 3px solid #FFFCF3;
+            opacity: 0;
+            transform: translate(0, 0);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            pointer-events: none;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            right: -60px;
+            transform: translateY(-50%) rotate(90deg);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            background: #000000;
+            color: #FFFCF3;
+            border: 2px solid #FFFCF3;
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+    }
+
+    .info {
+        flex: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0 0 24px 120px;
+        opacity: 0;
+        transform: translateX(60px);
+        pointer-events: none;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+
+        h3 {
+            margin: 0 0 20px;
+            font-size: 48px;
+            font-weight: 800;
+            color: #FFFCF3;
+        }
+
+        .tech {
+            margin: 0 0 18px;
+            font-size: 24px;
+            color: #00BC8F;
+            text-align: left;
+        }
+
+        .text {
+            margin: 0 0 20px;
+            max-width: 500px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        .github {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 190px;
+            height: 65px;
+            box-sizing: border-box;
+            border: 3px solid #FFFCF3;
+            color: #FFFCF3;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+
+    // gespiegelte Projekte (2 und 4)
+    &.reverse {
+        .number {
+            right: auto;
+            left: 100px;
+        }
+
+        .preview .arrow {
+            right: auto;
+            left: -60px;
+        }
+
+        .info {
+            padding: 0 100px 24px 0;
+            transform: translateX(-60px);
+        }
+    }
+
+    // Hover-Zustand (muss nach den reverse-Regeln stehen)
+    .preview:hover {
+        img {
+            filter: grayscale(0);
+        }
+
+        .frame {
+            opacity: 1;
+            transform: translate(20px, 20px);
+        }
+
+        .arrow {
+            opacity: 1;
+            transform: translateY(-50%) rotate(0deg);
+        }
+    }
+
+    &.reverse .preview:hover .frame {
+        transform: translate(-20px, 20px);
+    }
+
+    .preview:hover + .info,
+    .info:hover {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+}
