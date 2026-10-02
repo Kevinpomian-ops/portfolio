@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './references.html',
 })
 export class References {
-  referencesLogo = 'assets/images/format_quote-solid.svg';
+  referencesLogo = 'assets/format_quote.svg';
   references = [
     {
       name: '-',
