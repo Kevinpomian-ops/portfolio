@@ -5,9 +5,10 @@ import { Landinpage } from './landinpage/landinpage';
 import { Aboutme } from './aboutme/aboutme';
 import { Myskills } from './myskills/myskills';
 import { Myprojects } from './myprojects/myprojects';
+import { References } from './references/references';
 
 @Component({
-  imports: [RouterOutlet, Header, Landinpage, Aboutme, Myskills, Myprojects],
+  imports: [RouterOutlet, Header, Landinpage, Aboutme, Myskills, Myprojects, References],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',

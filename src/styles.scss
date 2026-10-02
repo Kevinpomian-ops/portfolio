@@ -5,54 +5,63 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Overpass';
   src: url('/assets/fonts/overpass/Overpass-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
+
 // Italic-Schnitte analog mit font-style: italic (gleiche Dateien: Overpass-*Italic.ttf)
 
 // Syne
@@ -62,24 +71,28 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Syne';
   src: url('/assets/fonts/syne/Syne-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Syne';
   src: url('/assets/fonts/syne/Syne-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Syne';
   src: url('/assets/fonts/syne/Syne-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Syne';
   src: url('/assets/fonts/syne/Syne-ExtraBold.ttf') format('truetype');
@@ -87,7 +100,7 @@
   font-style: normal;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0px;
 }
@@ -96,7 +109,9 @@ html {
   background-color: #000000;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Syne;
   color: #FFFCF3;
 }
@@ -104,4 +119,21 @@ h1, h2, h3 {
 p {
   font-family: Overpass;
   color: #FFFCF3;
+}
+
+.arrow-right {
+  text-align: right;
+  padding-right: 85px;
+}
+
+.arrow-left {
+  align-self: stretch;
+  text-align: left;
+  padding-left: 180px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.arrow-left img {
+  transform: scaleX(-1);
 }

@@ -65,12 +65,12 @@ section {
     overflow: hidden;
 }
 
-.lack-of-skill-icon > img {
+.lack-of-skill-icon>img {
     width: 100%;
     height: 100%;
 }
 
-.lack-of-skill-icon > img:hover {
+.lack-of-skill-icon>img:hover {
     animation: orbit 1s ease-in-out 1;
 }
 
@@ -91,18 +91,6 @@ section {
 .lack-of-skill {
     width: 100%;
     text-align: center;
-}
-
-.arrow-left {
-    align-self: stretch;
-    text-align: left;
-    padding-left: 180px;
-    padding-top: 30px;
-    box-sizing: border-box;
-}
-
-.arrow-left img {
-    transform: scaleX(-1);
 }
 
 .lack-of-skill {

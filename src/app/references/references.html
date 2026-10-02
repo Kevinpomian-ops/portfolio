@@ -1,0 +1,21 @@
+<section>
+    <h2>References</h2>
+    <p>I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with
+        me.
+    </p>
+    <div class="ref">
+
+        @for (reference of references; track reference.name) {
+        <div class="reference">
+            <img [src]="referencesLogo" [alt]="reference.name + ' logo'">
+            <p class="reference-text">{{ reference.reference }}</p>
+            <p class="reference-name">{{ reference.name }}</p>
+        </div>
+        }
+    </div>
+
+    <div class="arrow-right">
+        <img src="/assets/pfeil.svg" alt="">
+    </div>
+
+</section>
