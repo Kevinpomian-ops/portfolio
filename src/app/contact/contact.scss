@@ -1,0 +1,251 @@
+$cream: #fffcf3;
+$green: #00bc8f;
+$red: #e61d49;
+$ok: #7ae82e;
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 100px;
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 58px;
+}
+
+h2 {
+    color: #FFFCF3;
+    align-items: start;
+    font-size: 78px;
+    font-weight: 800;
+    margin: 0;
+    padding: 50px 100px 0;
+}
+
+h2:hover {
+    color: #00BC8F;
+    cursor: default;
+}
+
+h3 {
+  color: $green;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  max-width: 770px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  input,
+  textarea {
+    width: 100%;
+    font-family: Overpass;
+    font-size: 20px;
+    color: $cream;
+    background: transparent;
+    padding: 20px 64px 16px 30px;
+    border: 2px solid transparent;
+    border-bottom-color: $cream;
+    border-radius: 0;
+    outline: none;
+    resize: vertical;
+    transition: box-shadow 150ms ease;
+  }
+
+  // Hover ohne Rahmen: untere Linie dicker
+  input:hover,
+  textarea:hover {
+    box-shadow: inset 0 -2px 0 $cream;
+  }
+
+  // Fokus ODER Text vorhanden: dünner Rahmen bleibt
+  input:focus,
+  textarea:focus,
+  input:not(:placeholder-shown),
+  textarea:not(:placeholder-shown) {
+    border-color: $cream;
+  }
+
+  // Hover bei sichtbarem Rahmen: Rahmen dicker
+  input:focus:hover,
+  textarea:focus:hover,
+  input:not(:placeholder-shown):hover,
+  textarea:not(:placeholder-shown):hover {
+    box-shadow: inset 0 0 0 2px $cream;
+  }
+
+  // Label: normal als Platzhalter, bei Fokus/Inhalt im Rahmen oben
+  label {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding: 0 4px;
+    font-family: Overpass;
+    font-size: 20px;
+    color: $cream;
+    background: #000;
+    pointer-events: none;
+    transition: all 150ms ease;
+  }
+
+  input:focus ~ label,
+  textarea:focus ~ label,
+  input:not(:placeholder-shown) ~ label,
+  textarea:not(:placeholder-shown) ~ label {
+    top: -12px;
+    left: 20px;
+    font-size: 18px;
+  }
+
+  // Fehlerzustand
+  input.ng-invalid.ng-touched,
+  textarea.ng-invalid.ng-touched {
+    border-bottom-color: $red;
+  }
+
+  input.ng-invalid.ng-touched:focus,
+  textarea.ng-invalid.ng-touched:focus,
+  input.ng-invalid.ng-touched:not(:placeholder-shown),
+  textarea.ng-invalid.ng-touched:not(:placeholder-shown) {
+    border-color: $red;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+
+  &.error circle {
+    fill: $red;
+  }
+
+  &.ok circle {
+    fill: $ok;
+  }
+}
+
+.errorText {
+  color: $red;
+  font-size: 16px;
+  font-family: Overpass;
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.passedText {
+  color: $green;
+  text-align: center;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  input {
+    appearance: none;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    background: transparent;
+    border: 2px solid $cream;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+  }
+
+  input:hover {
+    border-width: 4px;
+  }
+
+  input:checked::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: $green;
+  }
+
+  label {
+    font-family: Overpass;
+    font-size: 16px;
+    color: $cream;
+  }
+
+  a {
+    color: $green;
+    margin: 0 4px;
+  }
+}
+
+.send-button {
+  align-self: center;
+  margin-top: 20px;
+  padding: 20px 60px;
+  font-family: Overpass;
+  font-size: 28px;
+  color: $cream;
+  background: #000;
+  border: 4px solid $cream;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.send-button:hover:not(:disabled) {
+  color: $green;
+  border-color: $green;
+}
+
+.send-button:disabled {
+  color: #666;
+  border-color: #666;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .field input,
+  .field textarea {
+    padding-left: 16px;
+  }
+
+  .field label {
+    left: 16px;
+  }
+}
