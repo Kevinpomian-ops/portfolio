@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideTranslateService } from '@ngx-translate/core';
 import { References } from './references';
 
 describe('References', () => {
@@ -8,6 +9,7 @@ describe('References', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [References],
+      providers: [provideTranslateService()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(References);

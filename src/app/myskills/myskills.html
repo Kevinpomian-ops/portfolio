@@ -1,5 +1,5 @@
 <section>
-    <h2>My skills</h2>
+    <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
     <div class="skill-sektion">
         <div class="skill-list">
         @for (item of skill_list; track item.skill) {
@@ -13,7 +13,7 @@
             <div class="lack-of-skill-icon">
                 <img src="/assets/skills/Property 1=Continued learning.svg" alt="">
             </div>
-            <p>Don’t see the skill you need?<button>Contact me</button>I’m always ready to learn!</p>
+            <p>{{ 'SKILLS.PROMPT' | translate }}<button>{{ 'SKILLS.CONTACT' | translate }}</button>{{ 'SKILLS.READY' | translate }}</p>
         </div>
     </div>
 

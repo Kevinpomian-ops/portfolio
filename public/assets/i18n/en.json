@@ -1,0 +1,66 @@
+{
+  "HEADER": {
+    "LOGO_ALT": "Kevin Pomian logo",
+    "MENU": "Open navigation menu"
+  },
+  "LANDING": {
+    "TITLE_FIRST": "Full stack",
+    "TITLE_SECOND": "Developer",
+    "SCROLL": "Scroll",
+    "DOWN": "Down"
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "OPENING": "Building. Learning. Solving.",
+    "PARAGRAPH_ONE": "I'm Kevin, an aspiring Fullstack Developer with a strong interest in web development, backend technologies and IT infrastructure.",
+    "PARAGRAPH_TWO": "I enjoy turning ideas into working applications, understanding how things work under the hood and solving problems along the way. From HTML, CSS and TypeScript to Angular, servers and self-hosted systems, I like exploring the full picture of modern IT.",
+    "PARAGRAPH_THREE": "I'm constantly learning, experimenting and building — with the goal of becoming a developer who doesn't just write code, but understands the systems behind it.",
+    "LOCATION": "Based in Landshut",
+    "REMOTE": "Open to remote work",
+    "TALK": "Let's talk"
+  },
+  "SKILLS": {
+    "TITLE": "My skills",
+    "PROMPT": "Don't see the skill you need? ",
+    "CONTACT": "Contact me",
+    "READY": " I'm always ready to learn!"
+  },
+  "PROJECTS": {
+    "TITLE": "Portfolio",
+    "INTRO": "Explore a selection of my work here — interact with projects to see my skills in action.",
+    "GITHUB": "Github",
+    "JOIN_DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop, and assign users and categories.",
+    "POLLO_DESCRIPTION": "A jump, run and throw game built with an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight the crazy hen.",
+    "FOTOGRAM_DESCRIPTION": "A curated photo collection themed around Japan. Built with a grid layout using only HTML and CSS.",
+    "POKEDEX_DESCRIPTION": "A simple library based on the PokéAPI that provides and catalogues Pokémon information."
+  },
+  "REFERENCES": {
+    "TITLE": "References",
+    "INTRO": "I thrive both independently and as part of a team. Here's what my colleagues have to say about working with me.",
+    "COMING_SOON": "Coming soon"
+  },
+  "CONTACT": {
+    "TITLE": "Say Hi!",
+    "HEADING": "Want to discuss a new project?",
+    "SUBTITLE": "Say hello! Let's discuss your ideas and make them happen.",
+    "NAME": "Your name",
+    "NAME_REQUIRED": "Your name is required",
+    "EMAIL": "Your email",
+    "EMAIL_INVALID": "Please enter a valid email",
+    "MESSAGE": "Your message",
+    "MESSAGE_REQUIRED": "Your message is required",
+    "PRIVACY_START": "I've read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_END": "and agree to the processing of my data as outlined.",
+    "PRIVACY_REQUIRED": "Please accept the privacy policy",
+    "SENDING": "Sending...",
+    "SEND": "Send message",
+    "SUCCESS": "Message sent.",
+    "SEND_FAILED": "Sending failed. Please try again later."
+  },
+  "FOOTER": {
+    "GITHUB": "Visit Kevin Pomian on GitHub",
+    "EMAIL": "Email Kevin Pomian",
+    "LINKEDIN": "Visit Kevin Pomian on LinkedIn"
+  }
+}

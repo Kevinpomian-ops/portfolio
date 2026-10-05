@@ -1,0 +1,66 @@
+{
+  "HEADER": {
+    "LOGO_ALT": "Logo von Kevin Pomian",
+    "MENU": "Navigationsmenü öffnen"
+  },
+  "LANDING": {
+    "TITLE_FIRST": "Full-Stack",
+    "TITLE_SECOND": "Entwickler",
+    "SCROLL": "Nach",
+    "DOWN": "unten"
+  },
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "OPENING": "Entwickeln. Lernen. Lösungen finden.",
+    "PARAGRAPH_ONE": "Ich bin Kevin, angehender Fullstack-Entwickler mit großem Interesse an Webentwicklung, Backend-Technologien und IT-Infrastruktur.",
+    "PARAGRAPH_TWO": "Ich setze Ideen gerne in funktionierende Anwendungen um, möchte verstehen, was im Hintergrund passiert, und löse dabei entstehende Probleme. Von HTML, CSS und TypeScript bis hin zu Angular, Servern und selbst gehosteten Systemen interessiert mich das große Ganze der modernen IT.",
+    "PARAGRAPH_THREE": "Ich lerne, experimentiere und entwickle ständig weiter – mit dem Ziel, nicht nur Code zu schreiben, sondern auch die Systeme dahinter zu verstehen.",
+    "LOCATION": "Aus Landshut",
+    "REMOTE": "Offen für Remote-Arbeit",
+    "TALK": "Lass uns sprechen"
+  },
+  "SKILLS": {
+    "TITLE": "Meine Fähigkeiten",
+    "PROMPT": "Die gesuchte Fähigkeit ist nicht dabei? ",
+    "CONTACT": "Kontaktiere mich",
+    "READY": " Ich lerne gerne dazu!"
+  },
+  "PROJECTS": {
+    "TITLE": "Portfolio",
+    "INTRO": "Hier findest du eine Auswahl meiner Arbeiten – entdecke meine Fähigkeiten direkt in den Projekten.",
+    "GITHUB": "GitHub",
+    "JOIN_DESCRIPTION": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstelle und organisiere Aufgaben per Drag-and-drop und weise Personen sowie Kategorien zu.",
+    "POLLO_DESCRIPTION": "Ein Spring-, Lauf- und Wurfspiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "FOTOGRAM_DESCRIPTION": "Eine kuratierte Fotosammlung rund um Japan. Umgesetzt mit einem Grid-Layout und nur mit HTML und CSS.",
+    "POKEDEX_DESCRIPTION": "Eine einfache, auf der PokéAPI basierende Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  },
+  "REFERENCES": {
+    "TITLE": "Referenzen",
+    "INTRO": "Ich arbeite gerne selbstständig und im Team. Das sagen meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir.",
+    "COMING_SOON": "Demnächst"
+  },
+  "CONTACT": {
+    "TITLE": "Sag Hallo!",
+    "HEADING": "Möchtest du über ein neues Projekt sprechen?",
+    "SUBTITLE": "Melde dich! Lass uns deine Ideen besprechen und gemeinsam umsetzen.",
+    "NAME": "Dein Name",
+    "NAME_REQUIRED": "Bitte gib deinen Namen ein",
+    "EMAIL": "Deine E-Mail-Adresse",
+    "EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "MESSAGE": "Deine Nachricht",
+    "MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein",
+    "PRIVACY_START": "Ich habe die",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_END": "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
+    "PRIVACY_REQUIRED": "Bitte akzeptiere die Datenschutzerklärung",
+    "SENDING": "Wird gesendet …",
+    "SEND": "Nachricht senden",
+    "SUCCESS": "Nachricht gesendet.",
+    "SEND_FAILED": "Senden fehlgeschlagen. Bitte versuche es später erneut."
+  },
+  "FOOTER": {
+    "GITHUB": "Kevin Pomian auf GitHub besuchen",
+    "EMAIL": "Kevin Pomian eine E-Mail senden",
+    "LINKEDIN": "Kevin Pomian auf LinkedIn besuchen"
+  }
+}

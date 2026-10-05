@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [],
+  imports: [TranslatePipe],
   selector: 'app-references',
   styleUrl: './references.scss',
   templateUrl: './references.html',
@@ -11,17 +12,17 @@ export class References {
   references = [
     {
       name: '-',
-      reference: 'comming soon',
+      reference: 'REFERENCES.COMING_SOON',
 
     },
         {
       name: '-',
-      reference: 'comming soon',
+      reference: 'REFERENCES.COMING_SOON',
 
     },
         {
       name: '-',
-      reference: 'comming soon',
+      reference: 'REFERENCES.COMING_SOON',
 
     },
   ];

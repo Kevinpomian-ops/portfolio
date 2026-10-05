@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [],
+  imports: [TranslatePipe],
   selector: 'app-myprojects',
   styleUrl: './myprojects.scss',
   templateUrl: './myprojects.html',
@@ -11,28 +12,28 @@ export class Myprojects {
     {
       title: 'Join',
       tech: 'Angular | TypeScript | HTML | CSS | Firebase',
-      text: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      text: 'PROJECTS.JOIN_DESCRIPTION',
       img: 'assets/join.png',
       link: '...'
     },
     {
       title: 'EL-POLLO-LOCO',
       tech: 'Canvas | HTML | CSS | JavaScript',
-      text: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      text: 'PROJECTS.POLLO_DESCRIPTION',
       img: 'assets/pollo_loco.png',
       link: '...'
     },
     {
       title: 'Fotogram',
       tech: ' HTML | CSS ',
-      text: 'A curated photo collection themed around Japan. Built with a grid layout using only HTML and CSS.',
+      text: 'PROJECTS.FOTOGRAM_DESCRIPTION',
       img: 'assets/fotogram.png',
       link: '...'
     },
     {
       title: 'Pokedex',
       tech: 'JavaScript | HTML | CSS | API',
-      text: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      text: 'PROJECTS.POKEDEX_DESCRIPTION',
       img: 'assets/pokedex.png',
       link: '...'
     },

@@ -1,7 +1,7 @@
 <section>
     <div class="portfolio-header">
-        <h2>Portfolio</h2>
-        <p>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</p>
+        <h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
+        <p>{{ 'PROJECTS.INTRO' | translate }}</p>
     </div>
 
     @for (p of projects; track p.title; let i = $index) {
@@ -15,8 +15,8 @@
         <div class="info">
             <h3>{{ p.title }}</h3>
             <p class="tech">{{ p.tech }}</p>
-            <p class="text">{{ p.text }}</p>
-            <a class="github" [href]="p.link" target="_blank">Github</a>
+            <p class="text">{{ p.text | translate }}</p>
+            <a class="github" [href]="p.link" target="_blank" rel="noopener noreferrer">{{ 'PROJECTS.GITHUB' | translate }}</a>
         </div>
     </article>
     }

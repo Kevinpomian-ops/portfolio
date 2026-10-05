@@ -1,22 +1,22 @@
 <section id="contact">
     <div class="headline">
-        <h2>Say Hi!</h2>
+        <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
     </div>
 
-  <h3>Want to discuss a new project?</h3>
-  <p class="subtitle">Say hello! let's discuss your ideas and make it happen</p>
+  <h3>{{ 'CONTACT.HEADING' | translate }}</h3>
+  <p class="subtitle">{{ 'CONTACT.SUBTITLE' | translate }}</p>
 
   <form [formGroup]="sendMailForm" (ngSubmit)="submitSendMailForm()" novalidate>
     <div class="field">
       <input id="senderName" type="text" formControlName="senderName" placeholder=" " />
-      <label for="senderName">Your name</label>
+      <label for="senderName">{{ 'CONTACT.NAME' | translate }}</label>
       @if (senderName.touched && senderName.invalid) {
         <svg class="icon error" viewBox="0 0 32 32">
           <circle cx="16" cy="16" r="16" />
           <rect x="14" y="7" width="4" height="12" fill="#000" />
           <rect x="14" y="22" width="4" height="4" fill="#000" />
         </svg>
-        <span class="errorText">Your name is required</span>
+        <span class="errorText">{{ 'CONTACT.NAME_REQUIRED' | translate }}</span>
       } @else if (senderName.dirty && senderName.valid) {
         <svg class="icon ok" viewBox="0 0 32 32">
           <circle cx="16" cy="16" r="16" />
@@ -27,14 +27,14 @@
 
     <div class="field">
       <input id="email" type="email" formControlName="email" placeholder=" " />
-      <label for="email">Your email</label>
+      <label for="email">{{ 'CONTACT.EMAIL' | translate }}</label>
       @if (email.touched && email.invalid) {
         <svg class="icon error" viewBox="0 0 32 32">
           <circle cx="16" cy="16" r="16" />
           <rect x="14" y="7" width="4" height="12" fill="#000" />
           <rect x="14" y="22" width="4" height="4" fill="#000" />
         </svg>
-        <span class="errorText">Please enter a valid email</span>
+        <span class="errorText">{{ 'CONTACT.EMAIL_INVALID' | translate }}</span>
       } @else if (email.dirty && email.valid) {
         <svg class="icon ok" viewBox="0 0 32 32">
           <circle cx="16" cy="16" r="16" />
@@ -45,32 +45,31 @@
 
     <div class="field">
       <textarea id="message" rows="8" formControlName="message" placeholder=" "></textarea>
-      <label for="message">Your message</label>
+      <label for="message">{{ 'CONTACT.MESSAGE' | translate }}</label>
       @if (message.touched && message.invalid) {
-        <span class="errorText">Your message is required</span>
+        <span class="errorText">{{ 'CONTACT.MESSAGE_REQUIRED' | translate }}</span>
       }
     </div>
 
     <div class="privacy">
       <input id="privacy" type="checkbox" formControlName="privacy" />
       <label for="privacy">
-        I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-        outlined.
+        {{ 'CONTACT.PRIVACY_START' | translate }} <a href="#">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a> {{ 'CONTACT.PRIVACY_END' | translate }}
       </label>
     </div>
     @if (privacy.touched && privacy.invalid) {
-      <span class="errorText">Please accept the privacy policy</span>
+      <span class="errorText">{{ 'CONTACT.PRIVACY_REQUIRED' | translate }}</span>
     }
 
     <button type="submit" class="send-button" [disabled]="sendMailForm.invalid || sendState === 'sending'">
-      {{ sendState === 'sending' ? 'Sending...' : 'Send message' }}
+      {{ (sendState === 'sending' ? 'CONTACT.SENDING' : 'CONTACT.SEND') | translate }}
     </button>
 
     @if (sendState === 'success') {
-      <p class="passedText">Message sent.</p>
+      <p class="passedText">{{ 'CONTACT.SUCCESS' | translate }}</p>
     }
     @if (sendState === 'error') {
-      <p class="errorText center">Sending failed. Please try again later.</p>
+      <p class="errorText center">{{ 'CONTACT.SEND_FAILED' | translate }}</p>
     }
   </form>
 </section>

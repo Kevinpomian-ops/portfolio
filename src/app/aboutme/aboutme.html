@@ -1,35 +1,19 @@
 <section>
-    <h2>About me</h2>
+    <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
     <article>
         <div>
-            <p>
-                Building. Learning. Solving. <br>
-
-                I'm Kevin, an aspiring Fullstack Developer with a strong interest in web development, backend
-                technologies
-                and IT infrastructure.
-
-                I enjoy turning ideas into working applications, understanding how things work under the hood and
-                solving
-                problems along the way. From HTML, CSS and TypeScript to Angular, servers and self-hosted systems, I
-                like
-                exploring the full picture of modern IT.
-
-                I'm constantly learning, experimenting and building — with the goal of becoming a developer who doesn't
-                just
-                write code, but understands the systems behind it.
-            </p>
+            <p>{{ 'ABOUT.OPENING' | translate }}<br><br>{{ 'ABOUT.PARAGRAPH_ONE' | translate }}<br><br>{{ 'ABOUT.PARAGRAPH_TWO' | translate }}<br><br>{{ 'ABOUT.PARAGRAPH_THREE' | translate }}</p>
             <div class="my-location">
                 <img class="house" src="/assets/house.svg" alt="">
-                <p>Based in Landshut</p>
+                <p>{{ 'ABOUT.LOCATION' | translate }}</p>
             </div>
             <div class="open-for-remote">
                 <img class="laptop" src="/assets/laptop_chromebook.svg" alt="">
-                <p>Open to work Remote</p>
+                <p>{{ 'ABOUT.REMOTE' | translate }}</p>
             </div>
             <nav class="nav-talk">
                 <button class="talk-button">
-                    <p>Let's talk</p>
+                    <p>{{ 'ABOUT.TALK' | translate }}</p>
                 </button>
             </nav>
 

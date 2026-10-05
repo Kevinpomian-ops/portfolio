@@ -1,6 +1,6 @@
 <header>
     <div>
-        <img id="logo" src="assets/logo_kp.png" alt="Logo Kevin Pomian">
+        <img id="logo" src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
     </div>
 
     <div>
@@ -8,7 +8,7 @@
             class="launge-button"
             [class.selected-language]="selectedLanguage === 'EN'"
             type="button"
-            (click)="selectedLanguage = 'EN'"
+            (click)="setLanguage('en')"
         >
             EN
         </button>
@@ -16,10 +16,10 @@
             class="launge-button"
             [class.selected-language]="selectedLanguage === 'DE'"
             type="button"
-            (click)="selectedLanguage = 'DE'"
+            (click)="setLanguage('de')"
         >
             DE
         </button>
-        <button id="menuButton" type="button"><img id="menuButtenImg" src="assets/burger-menu-S3-FFFCF3.svg" alt=""></button>
+        <button id="menuButton" type="button" [attr.aria-label]="'HEADER.MENU' | translate"><img id="menuButtenImg" src="assets/burger-menu-S3-FFFCF3.svg" alt=""></button>
     </div>
 </header>
