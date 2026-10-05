@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFFCF3;
+    padding: 0px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+p {
+    color: #000000;
+}
+
+button {
+    background-color: #FFFCF3;
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#githubButton>img {
+    padding-bottom: 10px;
+}
+
+
+
+
+.footer-info>img {
+    height: 66px;
+    width: 66px;
+}

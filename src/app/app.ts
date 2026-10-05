@@ -7,9 +7,10 @@ import { Myskills } from './myskills/myskills';
 import { Myprojects } from './myprojects/myprojects';
 import { References } from './references/references';
 import { Contact } from './contact/contact';
+import { Footer } from './footer/footer';
 
 @Component({
-  imports: [RouterOutlet, Header, Landinpage, Aboutme, Myskills, Myprojects, References, Contact],
+  imports: [RouterOutlet, Header, Landinpage, Aboutme, Myskills, Myprojects, References, Contact, Footer],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
