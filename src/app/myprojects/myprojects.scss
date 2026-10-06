@@ -197,3 +197,105 @@ p {
         pointer-events: auto;
     }
 }
+
+@media (max-width: 1200px) {
+    .project,
+    .project.reverse {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 64px 48px;
+    }
+
+    .project .number,
+    .project.reverse .number {
+        top: 20px;
+        right: 48px;
+        left: auto;
+        font-size: 32px;
+    }
+
+    .project .preview {
+        flex: 0 1 auto;
+        width: min(620px, 100%);
+        height: auto;
+        aspect-ratio: 620 / 393;
+    }
+
+    .project .preview img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .project .info,
+    .project.reverse .info {
+        align-self: stretch;
+        padding: 0;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .project .preview img {
+        filter: grayscale(0);
+    }
+
+    .project .preview .arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 44px;
+        padding: 40px 24px 0;
+    }
+
+    .portfolio-header {
+        padding: 0 24px;
+    }
+
+    .portfolio-header p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .portfolio-header h2 {
+        width: 100%;
+        min-width: 0;
+        padding-inline: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .project,
+    .project.reverse {
+        padding: 56px 24px 40px;
+        gap: 20px;
+    }
+
+    .project .number,
+    .project.reverse .number {
+        top: 12px;
+        right: 24px;
+        font-size: 24px;
+    }
+
+    .project .info h3 {
+        font-size: 34px;
+        margin-bottom: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .project .info .tech {
+        font-size: 18px;
+    }
+
+    .project .info .github {
+        width: min(190px, 100%);
+        height: 56px;
+    }
+
+    .project .info .github:hover {
+        width: min(260px, 100%);
+    }
+}

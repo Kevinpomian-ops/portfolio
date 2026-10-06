@@ -99,3 +99,55 @@ article>div:first-child {
 .img-me:hover + .img-me-border {
     display: flex;
 }
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: clamp(48px, 8vw, 68px);
+        padding: 40px 48px 0;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 48px;
+        gap: 40px;
+    }
+
+    .img-me,
+    .img-me-border {
+        width: min(553px, calc(100vw - 96px));
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 42px;
+        padding: 32px 24px 0;
+    }
+
+    article {
+        padding: 32px 24px;
+        gap: 32px;
+    }
+
+    .my-location {
+        padding-top: 32px;
+    }
+
+    .talk-button {
+        max-width: 100%;
+        padding: 16px 32px;
+    }
+
+    .talk-button:hover {
+        width: min(260px, 100%);
+    }
+
+    .img-me,
+    .img-me-border {
+        width: calc(100vw - 64px);
+    }
+}

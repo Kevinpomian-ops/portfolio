@@ -145,3 +145,74 @@ section {
     font-weight: 400;
     padding-left: 16px;
 }
+
+@media (max-width: 1280px) {
+    h2 {
+        font-size: clamp(48px, 7vw, 72px);
+    }
+
+    .skill-sektion {
+        box-sizing: border-box;
+        width: calc(100% - 64px);
+        height: auto;
+        min-height: 560px;
+        padding: 56px 32px;
+    }
+
+    .skill-list {
+        gap: 56px clamp(32px, 8vw, 96px);
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 40px;
+        margin-bottom: -24px;
+    }
+
+    .skill-sektion {
+        width: calc(100% - 32px);
+        min-height: 0;
+        padding: 48px 16px 32px;
+        gap: 40px;
+    }
+
+    .skill-list {
+        gap: 32px 24px;
+    }
+
+    .skills {
+        flex: 0 0 calc(33.333% - 24px);
+        align-items: center;
+        min-width: 76px;
+    }
+
+    .skills > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .lack-of-skill {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .lack-of-skill p {
+        padding-left: 0;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .lack-of-skill .contact-link {
+        width: auto;
+    }
+
+    .arrow-left {
+        padding-left: 32px;
+        padding-top: 24px;
+    }
+
+    .arrow-left img {
+        width: 90px;
+    }
+}

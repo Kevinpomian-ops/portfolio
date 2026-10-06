@@ -281,36 +281,60 @@ form {
   cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   h2 {
-    font-size: 28px;
+    font-size: clamp(42px, 8vw, 64px);
+  }
+
+  form {
+    width: calc(100% - 96px);
   }
 
   .subtitle {
-    font-size: 20px;
+    padding-inline: 48px;
   }
 
-  .field input,
-  .field textarea {
-    padding-left: 16px;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 38px;
+    padding-inline: 24px;
   }
 
-  .field label {
-    left: 16px;
+  h3 {
+    padding-inline: 24px;
+    font-size: 28px;
+  }
+
+  .headline {
+    padding-bottom: 32px;
+  }
+
+  .subtitle {
+    padding-inline: 24px;
+    font-size: 18px;
+  }
+
+  form {
+    width: calc(100% - 96px);
+  }
+
+  .privacy {
+    align-items: flex-start;
   }
 
   .scroll-up {
-    right: 8px;
+    right: -8px;
 
     img {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
     }
   }
 
   .send-button {
-    max-width: calc(100% - 72px);
-    padding: 16px 24px;
+    padding: 14px 20px;
     font-size: 20px;
   }
 }

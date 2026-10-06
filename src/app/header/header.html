@@ -1,9 +1,8 @@
-<header>
-    <div>
-        <img id="logo" src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
-    </div>
+<header [class.menu-open]="menuOpen">
+    <img id="logo" src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
 
-    <div>
+    <div class="header-actions">
+        <nav class="language-switch" [attr.aria-label]="'HEADER.LANGUAGE' | translate">
         <button
             class="launge-button"
             [class.selected-language]="selectedLanguage === 'EN'"
@@ -20,6 +19,43 @@
         >
             DE
         </button>
-        <button id="menuButton" type="button" [attr.aria-label]="'HEADER.MENU' | translate"><img id="menuButtenImg" src="assets/burger-menu-S3-FFFCF3.svg" alt=""></button>
+        </nav>
+        <button
+            id="menuButton"
+            type="button"
+            [attr.aria-label]="(menuOpen ? 'HEADER.MENU_CLOSE' : 'HEADER.MENU') | translate"
+            [attr.aria-expanded]="menuOpen"
+            aria-controls="mainNavigation"
+            (click)="toggleMenu()"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
+
+    @if (menuOpen) {
+        <nav id="mainNavigation" class="main-navigation" [attr.aria-label]="'HEADER.NAVIGATION' | translate">
+            <a class="menu-link" href="/#about" (click)="navigateToSection($event, 'about')">
+                <span>{{ 'HEADER.ABOUT' | translate }}</span>
+                <i class="menu-underline"></i>
+            </a>
+            <a class="menu-link" href="/#skills" (click)="navigateToSection($event, 'skills')">
+                <span>{{ 'HEADER.SKILLS' | translate }}</span>
+                <i class="menu-underline"></i>
+            </a>
+            <a class="menu-link" href="/#projects" (click)="navigateToSection($event, 'projects')">
+                <span>{{ 'HEADER.PROJECTS' | translate }}</span>
+                <i class="menu-underline"></i>
+            </a>
+            <a class="menu-link" href="/#references" (click)="navigateToSection($event, 'references')">
+                <span>{{ 'HEADER.REFERENCES' | translate }}</span>
+                <i class="menu-underline"></i>
+            </a>
+            <a class="menu-link" href="/#contact" (click)="navigateToSection($event, 'contact')">
+                <span>{{ 'HEADER.CONTACT' | translate }}</span>
+                <i class="menu-underline"></i>
+            </a>
+        </nav>
+    }
 </header>

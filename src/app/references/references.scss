@@ -30,3 +30,46 @@ p {
     display: block;
     margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: clamp(44px, 8vw, 64px);
+    }
+
+    p {
+        padding-inline: 32px;
+    }
+
+    .ref {
+        flex-wrap: wrap;
+        padding: 0 32px;
+    }
+
+    .reference {
+        flex: 1 1 280px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: clamp(28px, 9vw, 36px);
+        padding-bottom: 32px;
+    }
+
+    p {
+        font-size: 18px;
+        padding-inline: 24px;
+    }
+
+    .ref {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .reference {
+        width: 100%;
+        padding: 20px 16px;
+    }
+}

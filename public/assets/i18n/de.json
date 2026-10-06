@@ -1,7 +1,15 @@
 {
   "HEADER": {
     "LOGO_ALT": "Logo von Kevin Pomian",
-    "MENU": "Navigationsmenü öffnen"
+    "MENU": "Navigationsmenü öffnen",
+    "MENU_CLOSE": "Navigationsmenü schließen",
+    "NAVIGATION": "Seitennavigation",
+    "LANGUAGE": "Sprache auswählen",
+    "ABOUT": "Über mich",
+    "SKILLS": "Meine Fähigkeiten",
+    "PROJECTS": "Portfolio",
+    "REFERENCES": "Referenzen",
+    "CONTACT": "Kontakt"
   },
   "LANDING": {
     "TITLE_FIRST": "Full-Stack",
