@@ -54,7 +54,7 @@
     <div class="privacy">
       <input id="privacy" type="checkbox" formControlName="privacy" />
       <label for="privacy">
-        {{ 'CONTACT.PRIVACY_START' | translate }} <a href="#">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a> {{ 'CONTACT.PRIVACY_END' | translate }}
+        {{ 'CONTACT.PRIVACY_START' | translate }} <a routerLink="/privacy-policy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a> {{ 'CONTACT.PRIVACY_END' | translate }}
       </label>
     </div>
     @if (privacy.touched && privacy.invalid) {

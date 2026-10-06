@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [ReactiveFormsModule, TranslatePipe],
+  imports: [ReactiveFormsModule, RouterLink, TranslatePipe],
   selector: 'app-contact',
   styleUrl: './contact.scss',
   templateUrl: './contact.html',
@@ -57,8 +58,7 @@ export class Contact {
     }
     this.sendState = 'sending';
     try {
-      // HIER DEINE DOMAIN EINTRAGEN
-      const httpResponse = await fetch('https://deine-domain.de/sendMail.php', {
+      const httpResponse = await fetch('/sendMail.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -67,8 +67,9 @@ export class Contact {
           message: this.message.value,
         }),
       });
-      const result = await httpResponse.json();
-      if (result.success) {
+
+      const result: { success?: boolean } = await httpResponse.json();
+      if (httpResponse.ok && result.success === true) {
         this.sendState = 'success';
         this.sendMailForm.reset();
       } else {

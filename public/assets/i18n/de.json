@@ -62,6 +62,41 @@
   "FOOTER": {
     "GITHUB": "Kevin Pomian auf GitHub besuchen",
     "EMAIL": "Kevin Pomian eine E-Mail senden",
-    "LINKEDIN": "Kevin Pomian auf LinkedIn besuchen"
+    "LINKEDIN": "Kevin Pomian auf LinkedIn besuchen",
+    "LEGAL_NOTICE": "Impressum"
+  },
+  "LEGAL": {
+    "BACK": "Zurück zur Startseite",
+    "PRIVACY": {
+      "TITLE": "Datenschutzerklärung",
+      "INTRO": "Hier erfährst du, welche personenbezogenen Daten diese Portfolio-Website verarbeitet. Die Angaben zum Hosting und zum Versand des Kontaktformulars müssen vor dem produktiven Einsatz noch vervollständigt werden.",
+      "CONTROLLER_TITLE": "Verantwortlicher",
+      "CONTROLLER_TEXT": "Verantwortlich ist Kevin Pomian, erreichbar unter kevinpomian@icloud.com. Die vollständige Postanschrift muss hier noch ergänzt werden.",
+      "FORM_TITLE": "Kontaktformular",
+      "FORM_TEXT": "Wenn du das Kontaktformular verwendest, werden dein Name, deine E-Mail-Adresse und deine Nachricht verarbeitet und über das PHP-Skript dieser Website per E-Mail an kevinpomian@icloud.com gesendet. Deine E-Mail-Adresse wird als Antwortadresse verwendet.",
+      "FORM_PURPOSE": "Die Angaben dienen dazu, deine Anfrage zu empfangen und zu beantworten. Bitte übermittle über das Formular keine sensiblen Informationen, die für deine Anfrage nicht erforderlich sind.",
+      "LEGAL_BASIS_TITLE": "Rechtsgrundlage",
+      "LEGAL_BASIS_TEXT": "Soweit die Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Bei sonstigen Anfragen kann Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung) einschlägig sein.",
+      "RECIPIENTS_TITLE": "Empfänger und Hosting",
+      "RECIPIENTS_TEXT": "Die Kontaktanfrage wird per E-Mail an kevinpomian@icloud.com übermittelt. Der Hostinganbieter und der technische Mailserver, über den PHP mail() die Nachricht versendet, sind noch nicht bekannt und müssen vor Veröffentlichung ergänzt werden.",
+      "RETENTION_TITLE": "Speicherdauer",
+      "RETENTION_TEXT": "Das PHP-Skript speichert die Anfrage nicht dauerhaft auf dieser Website, sondern übergibt sie an den Mailversand. Die Speicherdauer im E-Mail-Postfach und beim Hostinganbieter ist noch zu klären und muss vor Veröffentlichung festgelegt werden.",
+      "RIGHTS_TITLE": "Deine Rechte",
+      "RIGHTS_TEXT": "Du hast im Rahmen der gesetzlichen Voraussetzungen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie das Recht, einer Verarbeitung zu widersprechen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Für Anfragen wende dich an die oben genannte E-Mail-Adresse.",
+      "OPEN_DETAILS_TITLE": "Noch zu ergänzende Angaben",
+      "OPEN_DETAILS_TEXT": "Vor Veröffentlichung müssen die vollständige Anschrift des Verantwortlichen, der Hostinganbieter, der Mailserver und die Speicherfristen geprüft und ergänzt werden. Diese Seite ist ein technischer Entwurf und keine Rechtsberatung."
+    },
+    "NOTICE": {
+      "TITLE": "Impressum",
+      "INTRO": "Angaben zum Anbieter dieser Website.",
+      "PROVIDER_TITLE": "Angaben gemäß § 5 DDG",
+      "PROVIDER_TEXT": "Kevin Pomian\n[Bitte vollständige ladungsfähige Postanschrift ergänzen]\n\nE-Mail: kevinpomian@icloud.com",
+      "CONTACT_TITLE": "Kontakt",
+      "CONTACT_TEXT": "E-Mail: kevinpomian@icloud.com",
+      "CONTENT_TITLE": "Verantwortlich für den Inhalt",
+      "CONTENT_TEXT": "Kevin Pomian\n[Bitte vollständige ladungsfähige Postanschrift ergänzen]",
+      "LIABILITY_TITLE": "Hinweise",
+      "LIABILITY_TEXT": "Die vollständige ladungsfähige Anschrift muss vor Veröffentlichung ergänzt werden. Die Inhalte dieser Seite ersetzen keine rechtliche Beratung."
+    }
   }
 }

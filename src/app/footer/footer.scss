@@ -7,26 +7,67 @@ footer {
     padding: 0px 100px;
 }
 
-nav {
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 42px;
 }
 
-p {
+.legal-notice {
+    position: relative;
     color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
 }
 
-button {
-    background-color: #FFFCF3;
-    border: none;
-    height: 40px;
-    width: 40px;
+.legal-notice::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
+}
 
+.legal-notice:hover,
+.legal-notice:focus-visible {
+    color: #00BC8F;
+    font-weight: 600;
+}
+
+.legal-notice:hover::after,
+.legal-notice:focus-visible::after {
+    transform: scaleX(1);
+}
+
+.social-links a {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.social-links img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    color: #000000;
 }
 
 #githubButton>img {
@@ -39,4 +80,15 @@ button {
 .footer-info>img {
     height: 66px;
     width: 66px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 16px 24px;
+        gap: 16px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
 }

@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  min-height: 60vh;
+  background: #000000;
+  color: #fffcf3;
+}
+
+.legal-page {
+  width: min(100% - 48px, 900px);
+  margin: 0 auto;
+  padding: 56px 0 100px;
+}
+
+.back-link {
+  color: #00bc8f;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 32px 0 20px;
+  font-size: clamp(36px, 7vw, 64px);
+}
+
+h2 {
+  margin: 32px 0 12px;
+  font-size: 26px;
+}
+
+p {
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.intro {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .legal-page {
+    width: min(100% - 32px, 900px);
+    padding-top: 36px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

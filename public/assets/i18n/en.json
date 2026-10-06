@@ -62,6 +62,41 @@
   "FOOTER": {
     "GITHUB": "Visit Kevin Pomian on GitHub",
     "EMAIL": "Email Kevin Pomian",
-    "LINKEDIN": "Visit Kevin Pomian on LinkedIn"
+    "LINKEDIN": "Visit Kevin Pomian on LinkedIn",
+    "LEGAL_NOTICE": "Legal notice"
+  },
+  "LEGAL": {
+    "BACK": "Back to home",
+    "PRIVACY": {
+      "TITLE": "Privacy policy",
+      "INTRO": "This page explains which personal data this portfolio website processes. Hosting and contact-form delivery details still need to be completed before production use.",
+      "CONTROLLER_TITLE": "Controller",
+      "CONTROLLER_TEXT": "The controller is Kevin Pomian, reachable at kevinpomian@icloud.com. The full postal address still needs to be added here.",
+      "FORM_TITLE": "Contact form",
+      "FORM_TEXT": "When you use the contact form, your name, email address and message are processed and sent by email to kevinpomian@icloud.com through this website's PHP script. Your email address is used as the reply address.",
+      "FORM_PURPOSE": "The details are used to receive and respond to your enquiry. Please do not submit sensitive information that is not needed to handle your enquiry.",
+      "LEGAL_BASIS_TITLE": "Legal basis",
+      "LEGAL_BASIS_TEXT": "Where an enquiry relates to entering into or performing a contract, processing is based on Article 6(1)(b) GDPR. Other enquiries may be processed on the basis of Article 6(1)(f) GDPR (legitimate interest in responding).",
+      "RECIPIENTS_TITLE": "Recipients and hosting",
+      "RECIPIENTS_TEXT": "Contact enquiries are sent by email to kevinpomian@icloud.com. The hosting provider and the mail server used by PHP mail() are not yet known and must be added before publication.",
+      "RETENTION_TITLE": "Retention",
+      "RETENTION_TEXT": "The PHP script does not permanently store enquiries on this website; it passes them to the mail system. Retention in the email inbox and by the hosting provider still needs to be clarified and stated before publication.",
+      "RIGHTS_TITLE": "Your rights",
+      "RIGHTS_TEXT": "Subject to legal requirements, you have rights to access, rectification, erasure, restriction of processing and data portability, as well as the right to object to processing. You may also lodge a complaint with a data protection supervisory authority. Contact the email address above to exercise your rights.",
+      "OPEN_DETAILS_TITLE": "Details still to be completed",
+      "OPEN_DETAILS_TEXT": "Before publication, verify and add the controller's full postal address, hosting provider, mail server and retention periods. This page is a technical draft, not legal advice."
+    },
+    "NOTICE": {
+      "TITLE": "Legal notice",
+      "INTRO": "Information about the provider of this website.",
+      "PROVIDER_TITLE": "Provider information",
+      "PROVIDER_TEXT": "Kevin Pomian\n[Add the full postal address]\n\nEmail: kevinpomian@icloud.com",
+      "CONTACT_TITLE": "Contact",
+      "CONTACT_TEXT": "Email: kevinpomian@icloud.com",
+      "CONTENT_TITLE": "Responsible for content",
+      "CONTENT_TEXT": "Kevin Pomian\n[Add the full postal address]",
+      "LIABILITY_TITLE": "Information",
+      "LIABILITY_TEXT": "The full postal address must be added before publication. This page does not replace legal advice."
+    }
   }
 }

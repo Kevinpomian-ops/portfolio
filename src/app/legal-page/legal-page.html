@@ -1,0 +1,14 @@
+<main class="legal-page">
+  <a class="back-link" routerLink="/">{{ 'LEGAL.BACK' | translate }}</a>
+  <h1>{{ content().title | translate }}</h1>
+  <p class="intro">{{ content().intro | translate }}</p>
+
+  @for (section of content().sections; track section.title) {
+    <section>
+      <h2>{{ section.title | translate }}</h2>
+      @for (paragraph of section.paragraphs; track paragraph) {
+        <p>{{ paragraph | translate }}</p>
+      }
+    </section>
+  }
+</main>
