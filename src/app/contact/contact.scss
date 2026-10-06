@@ -61,7 +61,13 @@ button {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 28px;
+  width: 100%;
+}
+
+.field,
+.privacy {
   width: 100%;
   max-width: 770px;
 }
@@ -220,9 +226,40 @@ form {
   }
 }
 
+.send-actions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.scroll-up {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    transform-origin: center;
+    transition: transform 180ms ease;
+  }
+
+  &:hover img {
+    transform: scaleY(1.2);
+  }
+}
+
 .send-button {
   align-self: center;
-  margin-top: 20px;
   padding: 20px 60px;
   font-family: Overpass;
   font-size: 28px;
@@ -260,5 +297,20 @@ form {
 
   .field label {
     left: 16px;
+  }
+
+  .scroll-up {
+    right: 8px;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .send-button {
+    max-width: calc(100% - 72px);
+    padding: 16px 24px;
+    font-size: 20px;
   }
 }

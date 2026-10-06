@@ -61,9 +61,15 @@
       <span class="errorText">{{ 'CONTACT.PRIVACY_REQUIRED' | translate }}</span>
     }
 
-    <button type="submit" class="send-button" [disabled]="sendMailForm.invalid || sendState === 'sending'">
-      {{ (sendState === 'sending' ? 'CONTACT.SENDING' : 'CONTACT.SEND') | translate }}
-    </button>
+    <div class="send-actions">
+      <button type="submit" class="send-button" [disabled]="sendMailForm.invalid || sendState === 'sending'">
+        {{ (sendState === 'sending' ? 'CONTACT.SENDING' : 'CONTACT.SEND') | translate }}
+      </button>
+
+      <button type="button" class="scroll-up" (click)="scrollToTop()" [attr.aria-label]="'CONTACT.SCROLL_TO_TOP' | translate">
+        <img src="assets/arrow.svg" alt="">
+      </button>
+    </div>
 
     @if (sendState === 'success') {
       <p class="passedText">{{ 'CONTACT.SUCCESS' | translate }}</p>

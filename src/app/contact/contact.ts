@@ -46,6 +46,10 @@ export class Contact {
     return this.sendMailForm.controls.privacy;
   }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   async submitSendMailForm() {
     if (this.sendMailForm.invalid) {
       this.sendMailForm.markAllAsTouched();

@@ -100,7 +100,7 @@ section {
     perspective: 600px;
 }
 
-.lack-of-skill button {
+.lack-of-skill .contact-link {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -113,9 +113,10 @@ section {
     font-size: 22px;
     font-weight: 100;
     text-align: left;
+    text-decoration: none;
 }
 
-.lack-of-skill button::after {
+.lack-of-skill .contact-link::after {
     content: "";
     position: absolute;
     right: 0;
@@ -128,14 +129,14 @@ section {
     transition: transform 300ms ease;
 }
 
-.lack-of-skill button:hover,
-.lack-of-skill button:focus-visible {
+.lack-of-skill .contact-link:hover,
+.lack-of-skill .contact-link:focus-visible {
     cursor: pointer;
     font-weight: 600;
 }
 
-.lack-of-skill button:hover::after,
-.lack-of-skill button:focus-visible::after {
+.lack-of-skill .contact-link:hover::after,
+.lack-of-skill .contact-link:focus-visible::after {
     transform: scaleX(1);
 }
 

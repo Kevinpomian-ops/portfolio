@@ -56,7 +56,8 @@
     "SENDING": "Sending...",
     "SEND": "Send message",
     "SUCCESS": "Message sent.",
-    "SEND_FAILED": "Sending failed. Please try again later."
+    "SEND_FAILED": "Sending failed. Please try again later.",
+    "SCROLL_TO_TOP": "Scroll to top"
   },
   "FOOTER": {
     "GITHUB": "Visit Kevin Pomian on GitHub",

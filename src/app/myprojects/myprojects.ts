@@ -21,21 +21,21 @@ export class Myprojects {
       tech: 'Canvas | HTML | CSS | JavaScript',
       text: 'PROJECTS.POLLO_DESCRIPTION',
       img: 'assets/pollo_loco.png',
-      link: '...'
+      link: 'https://github.com/Kevinpomian-ops/pollo-locco'
     },
     {
       title: 'Fotogram',
       tech: ' HTML | CSS ',
       text: 'PROJECTS.FOTOGRAM_DESCRIPTION',
       img: 'assets/fotogram.png',
-      link: '...'
+      link: 'https://github.com/Kevinpomian-ops/Fotogram'
     },
     {
       title: 'Pokedex',
       tech: 'JavaScript | HTML | CSS | API',
       text: 'PROJECTS.POKEDEX_DESCRIPTION',
       img: 'assets/pokedex.png',
-      link: '...'
+      link: 'https://github.com/Kevinpomian-ops/pokedex'
     },
   ];
 }

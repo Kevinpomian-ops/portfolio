@@ -5,8 +5,18 @@
     </div>
 
     <nav>
-        <button id="githubButton" [attr.aria-label]="'FOOTER.GITHUB' | translate"><img src="assets/github_button.svg" alt=""></button>
-        <button id="emailButton" [attr.aria-label]="'FOOTER.EMAIL' | translate"><img src="assets/email_icon.svg" alt=""></button>
-        <button id="linkedinButton" [attr.aria-label]="'FOOTER.LINKEDIN' | translate"><img src="assets/linkedin_icon.svg" alt=""></button>
+        <a id="githubButton" [attr.aria-label]="'FOOTER.GITHUB' | translate" href="https://github.com/Kevinpomian-ops"
+            target="_blank" rel="noopener noreferrer">
+            <img src="assets/github_button.svg" alt="">
+        </a>
+
+        <a id="emailButton" [attr.aria-label]="'FOOTER.EMAIL' | translate" href="mailto:kevinpomian@icloud.com">
+            <img src="assets/email_icon.svg" alt="">
+        </a>
+
+        <a id="linkedinButton" [attr.aria-label]="'FOOTER.LINKEDIN' | translate"
+            href="https://www.linkedin.com/in/kevin-pomian-538240400" target="_blank" rel="noopener noreferrer">
+            <img src="assets/linkedin_icon.svg" alt="">
+        </a>
     </nav>
 </footer>
