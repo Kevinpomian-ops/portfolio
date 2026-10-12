@@ -1,6 +1,8 @@
 <footer>
     <div class="footer-info">
-        <img src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
+        <a routerLink="/" (click)="navigateHome($event)">
+            <img src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
+        </a>
         <p>© Kevin Pomian 2026</p>
         <a class="footer-email" href="mailto:kevinpomian@icloud.com">kevinpomian@icloud.com</a>
     </div>

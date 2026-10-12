@@ -11,19 +11,12 @@ export class References {
   referencesLogo = 'assets/format_quote.svg';
   references = [
     {
-      name: '-',
-      reference: 'REFERENCES.COMING_SOON',
-
+      name: '',
+      reference: 'REFERENCES.KEVIN_REFERENCE',
     },
-        {
+    {
       name: '-',
-      reference: 'REFERENCES.COMING_SOON',
-
-    },
-        {
-      name: '-',
-      reference: 'REFERENCES.COMING_SOON',
-
+      reference: 'REFERENCES.TEAM_REFERENCE',
     },
   ];
 }

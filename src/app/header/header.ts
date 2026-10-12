@@ -1,9 +1,9 @@
 import { Component, HostListener, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  imports: [TranslatePipe],
+  imports: [RouterLink, TranslatePipe],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',

@@ -1,5 +1,8 @@
 :host {
     display: block;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
     overflow-x: clip;
 }
 
@@ -55,6 +58,12 @@ p {
         flex: 0 0 620px;
         width: 620px;
         height: 393px;
+
+        .project-image-link {
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
 
         img {
             display: block;
@@ -139,6 +148,7 @@ p {
             box-sizing: border-box;
             border: 3px solid #FFFCF3;
             color: #FFFCF3;
+            font-family: Overpass, sans-serif;
             font-size: 20px;
             text-decoration: none;
             transition: width 2s;

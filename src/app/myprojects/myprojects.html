@@ -8,9 +8,11 @@
     <article class="project" [class.reverse]="i % 2 === 1">
         <span class="number">0{{ i + 1 }}/0{{ projects.length }}</span>
         <div class="preview">
-            <img [src]="p.img" [alt]="p.title">
-            <span class="frame"></span>
-            <span class="arrow">↗</span>
+            <a class="project-image-link" [attr.href]="p.projectUrl || null">
+                <img [src]="p.img" [alt]="p.title">
+                <span class="frame"></span>
+                <span class="arrow">↗</span>
+            </a>
         </div>
         <div class="info">
             <h3>{{ p.title }}</h3>

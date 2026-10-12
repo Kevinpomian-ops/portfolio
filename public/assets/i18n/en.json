@@ -45,6 +45,8 @@
   "REFERENCES": {
     "TITLE": "References",
     "INTRO": "I thrive both independently and as part of a team. Here's what my colleagues have to say about working with me.",
+    "KEVIN_REFERENCE": "I worked with Kevin on a group project during our retraining at Developer Akademie, and I really enjoyed working with him. He is always bringing fresh ideas and likes to think one step ahead. He feels right at home in code: he quickly understands how everything fits together and writes solid, well-thought-out solutions. He always stays calm and patient, whether tackling a tricky problem or explaining something to the team. Everything just works smoothly with Kevin on the team. I would work with him again anytime!",
+    "TEAM_REFERENCE": "I was lucky to work with Kevin on a demanding group project at Developer Akademie. He always stayed calm, composed and focused, helping keep our team on track for success. He is highly competent and easy to work with, and I would be glad to work with him again at the next opportunity.",
     "COMING_SOON": "Coming soon"
   },
   "CONTACT": {
@@ -98,13 +100,13 @@
       "TITLE": "Legal notice",
       "INTRO": "Information about the provider of this website.",
       "PROVIDER_TITLE": "Provider information",
-      "PROVIDER_TEXT": "Kevin Pomian\n[Add the full postal address]\n\nEmail: kevinpomian@icloud.com",
+      "PROVIDER_TEXT": "Kevin Pomian\nHeuweg 1\n84034 Landshut\nGermany\n\nEmail: kevinpomian@icloud.com\n\nThis website is a personal developer portfolio. It is intended to present information about me, my technical skills and my software projects.\n\nNo paid services are currently offered and no contracts are directly concluded through this website.",
       "CONTACT_TITLE": "Contact",
       "CONTACT_TEXT": "Email: kevinpomian@icloud.com",
       "CONTENT_TITLE": "Responsible for content",
-      "CONTENT_TEXT": "Kevin Pomian\n[Add the full postal address]",
-      "LIABILITY_TITLE": "Information",
-      "LIABILITY_TEXT": "The full postal address must be added before publication. This page does not replace legal advice."
+      "CONTENT_TEXT": "Kevin Pomian\nHeuweg 1\n84034 Landshut\nGermany",
+      "LIABILITY_TITLE": "External links",
+      "LIABILITY_TEXT": "This website contains links to third-party websites, in particular GitHub and LinkedIn. I have no control over the content of these external websites. The respective provider or operator is responsible for the content of linked pages.\n\nAt the time the links were created, no obvious unlawful content was identified. Permanent monitoring of external websites without specific indications of a legal violation is not reasonably possible.\n\nIf I become aware of any legal violations, the corresponding links will be removed."
     }
   }
 }

@@ -45,6 +45,8 @@
   "REFERENCES": {
     "TITLE": "Referenzen",
     "INTRO": "Ich arbeite gerne selbstständig und im Team. Das sagen meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir.",
+    "KEVIN_REFERENCE": "Mit Kevin habe ich während unserer Umschulung an der Developer Akademie ein Gruppenprojekt umgesetzt, und die Zusammenarbeit hat richtig Spaß gemacht. Er bringt ständig frische Ideen mit und denkt gern einen Schritt weiter. Im Code fühlt er sich einfach zu Hause: Er versteht schnell, wie alles zusammenhängt, und schreibt Lösungen, die Hand und Fuß haben. Dabei bleibt er immer ruhig und geduldig, egal ob es um ein kniffliges Problem geht oder darum, im Team etwas zu erklären. Mit Kevin im Team läuft es einfach. Ich würde jederzeit wieder mit ihm arbeiten!",
+    "TEAM_REFERENCE": "Ich hatte das große Glück, mit Kevin in einem Gruppenprojekt an der Developer Akademie zusammenzuarbeiten, das viel Aufwand erforderte. Er blieb immer ruhig, gelassen und fokussiert und hat dafür gesorgt, dass unser Team auf Erfolgskurs war. Er ist super kompetent, die Zusammenarbeit mit ihm ist unkompliziert, und ich würde bei nächster Gelegenheit gerne wieder mit ihm zusammenarbeiten.",
     "COMING_SOON": "Demnächst"
   },
   "CONTACT": {
@@ -98,13 +100,13 @@
       "TITLE": "Impressum",
       "INTRO": "Angaben zum Anbieter dieser Website.",
       "PROVIDER_TITLE": "Angaben gemäß § 5 DDG",
-      "PROVIDER_TEXT": "Kevin Pomian\n[Bitte vollständige ladungsfähige Postanschrift ergänzen]\n\nE-Mail: kevinpomian@icloud.com",
+      "PROVIDER_TEXT": "Kevin Pomian\nHeuweg 1\n84034 Landshut\nDeutschland\n\nE-Mail: kevinpomian@icloud.com\n\nDiese Website ist ein persönliches Entwickler-Portfolio. Sie dient der Darstellung meiner Person, meiner Kenntnisse und meiner Softwareprojekte.\n\nÜber diese Website werden derzeit keine kostenpflichtigen Leistungen angeboten und keine Verträge unmittelbar abgeschlossen.",
       "CONTACT_TITLE": "Kontakt",
       "CONTACT_TEXT": "E-Mail: kevinpomian@icloud.com",
       "CONTENT_TITLE": "Verantwortlich für den Inhalt",
-      "CONTENT_TEXT": "Kevin Pomian\n[Bitte vollständige ladungsfähige Postanschrift ergänzen]",
-      "LIABILITY_TITLE": "Hinweise",
-      "LIABILITY_TEXT": "Die vollständige ladungsfähige Anschrift muss vor Veröffentlichung ergänzt werden. Die Inhalte dieser Seite ersetzen keine rechtliche Beratung."
+      "CONTENT_TEXT": "Kevin Pomian\nHeuweg 1\n84034 Landshut\nDeutschland",
+      "LIABILITY_TITLE": "Haftung für externe Links",
+      "LIABILITY_TEXT": "Diese Website enthält Links zu externen Websites Dritter, insbesondere zu GitHub und LinkedIn. Auf deren Inhalte habe ich keinen Einfluss. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.\n\nZum Zeitpunkt der Verlinkung wurden keine offensichtlichen rechtswidrigen Inhalte festgestellt. Eine dauerhafte inhaltliche Kontrolle externer Seiten ist ohne konkrete Anhaltspunkte für eine Rechtsverletzung nicht zumutbar.\n\nBei Bekanntwerden von Rechtsverletzungen werden entsprechende Links entfernt."
     }
   }
 }

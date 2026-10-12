@@ -1,5 +1,7 @@
 <header [class.menu-open]="menuOpen">
-    <img id="logo" src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
+    <a routerLink="/">
+        <img id="logo" src="assets/logo_kp.png" [alt]="'HEADER.LOGO_ALT' | translate">
+    </a>
 
     <div class="header-actions">
         <nav class="language-switch" [attr.aria-label]="'HEADER.LANGUAGE' | translate">

@@ -1,3 +1,10 @@
+:host {
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
 h2 {
     font-size: 78px;
     font-weight: 800;
@@ -104,9 +111,10 @@ section {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    width: 130px;
+    width: auto;
     padding: 0;
     margin-inline: 8px;
+    white-space: nowrap;
     color: #00BC8F;
     background-color: #000000;
     border: none;
@@ -166,8 +174,13 @@ section {
 
 @media (max-width: 600px) {
     h2 {
-        font-size: 40px;
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(28px, 9vw, 40px);
         margin-bottom: -24px;
+        padding-inline: 12px;
+        text-align: center;
+        overflow-wrap: anywhere;
     }
 
     .skill-sektion {
@@ -198,13 +211,16 @@ section {
     }
 
     .lack-of-skill p {
+        width: 100%;
         padding-left: 0;
         font-size: 18px;
         line-height: 1.5;
+        overflow-wrap: anywhere;
     }
 
     .lack-of-skill .contact-link {
         width: auto;
+        white-space: normal;
     }
 
     .arrow-left {
